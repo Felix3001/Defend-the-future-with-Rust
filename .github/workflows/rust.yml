@@ -16,5 +16,4 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: cd world_hello
-    - run: ls
+    - run: cd world_hello & ls
