@@ -19,4 +19,6 @@ jobs:
     - run: | 
         cd world_hello/
         # 进入到文件夹中之后，可以在该文件夹内执行其他命令
-        ls
+        cargo build --verbose
+        cargo test --verbose
+
