@@ -16,5 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: cd world_hello/
-    - run: ls
+    - run: | 
+        cd world_hello/
+        # 进入到文件夹中之后，可以在该文件夹内执行其他命令
+        ls
