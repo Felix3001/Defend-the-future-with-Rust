@@ -16,7 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: | 
+    - name: Build and Test world_hello
+      run: | 
         cd world_hello/
         # 进入到文件夹中之后，可以在该文件夹内执行其他命令
         cargo build --verbose
