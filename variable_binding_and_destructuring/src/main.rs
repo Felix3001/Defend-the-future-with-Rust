@@ -70,12 +70,118 @@
 // }
 
 
-fn main() {
-    let x = define_x();
-    println!("{}, world", x);
-}
+// fn main() {
+//     let x = define_x();
+//     println!("{}, world", x);
+// }
 
-fn define_x() -> String {
-    let x = "hello".to_string();
-    x
-}
+// fn define_x() -> String {
+//     let x = "hello".to_string();
+//     x
+// }
+
+// fn main() {
+//     // for i in 1..=100 {
+//     //     println!("{}", i);
+//     // }
+//     for i in 'a'..='z' {
+//         println!("{}", i);  
+//     }
+//     let heart_eyed_cat = '😻';
+//     println!("{}", heart_eyed_cat);
+//     let t = true;
+
+//     let f: bool = false; 
+
+// }
+
+// fn main() {
+//     let y = {
+//         let x = 3;
+//         x + 1
+//     };
+
+//     println!("The value of y is: {}", y);
+// }
+
+// fn main() {
+//     let s = sum(1 , 2);
+//     assert_eq!(s, 3);
+// }
+
+// fn sum(x: i32, y: i32) -> i32 {
+//     x + y
+// }
+
+
+// 函数名和变量名使用蛇形命名法(snake case)，例如 fn add_two() -> {}
+// 函数的位置可以随便放，Rust 不关心我们在哪里定义了函数，只要有定义即可
+// 每个函数参数都需要标注类型
+
+// fn add(i: i32, j: i32) -> i32 {
+//     i + j
+// }
+
+// fn main() {
+//     // let result = add(1, 2);
+//     // println!("{}", result);
+//     // println!("hello,world");
+
+//     let mut s = String::from("hello");
+//     s.push_str(", world");
+//     println!("{}", s);
+// }
+
+
+// fn main() {
+//     let x: &str = "hello, world";
+//     let y = x;
+//     println!("{},{}",x,y);
+// }
+
+// fn main() {
+//     let s1 = String::from("hello");
+
+//     let len = calculate_length(&s1);
+
+//     println!("The length of '{}' is {}.", s1, len);
+// }
+
+// fn calculate_length(s: &String) -> usize {
+//     s.len()
+// }
+
+// fn main() {
+//     let mut s = String::from("hello");
+
+//     let a = change(&mut s);
+//     println!("{}", a);
+// }
+
+// fn change(some_string: &mut String) -> &mut String {
+//     some_string.push_str(", world");
+//     some_string
+// }
+
+
+fn main() {
+    let mut s = String::from("hello");
+ 
+     let r1 = &s;
+     let r2 = &s;
+     println!("{} and {}", r1, r2);
+     // 新编译器中，r1,r2作用域在这里结束
+ 
+     let r3 = &mut s;
+     println!("{}", r3);
+ } // 老编译器中，r1、r2、r3作用域在这里结束
+//    新编译器中，r3作用域在这里结束
+
+// fn main() {
+//     let mut s = String::from("hello");
+
+//     let r1 = &mut s;
+//     let r2 = &mut s;
+
+//     println!("{}, {}", r1, r2);
+// }
