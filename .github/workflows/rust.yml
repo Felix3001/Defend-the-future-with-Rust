@@ -16,8 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: world hello
-      run: cd world_hello
+    - run: cd world_hello
     - name: Build
       run: cargo build --verbose
     - name: Run tests
