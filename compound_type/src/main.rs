@@ -96,12 +96,22 @@
 // }
 
 
-fn main() {
-    for i in 1..4 {
-        if i == 2 {
-            continue;
-        }
-        println!("{}", i)
-    }
+// fn main() {
+//     for i in 1..4 {
+//         if i == 2 {
+//             continue;
+//         }
+//         println!("{}", i)
+//     }
         
+// }
+
+
+fn main() {
+    let mut i = 5;
+    while i >= 1 {
+        println!("{}", i);
+        i = i - 1;
+        println!("{}", i);
+    }
 }
