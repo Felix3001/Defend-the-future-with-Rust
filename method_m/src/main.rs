@@ -48,3 +48,5 @@ fn main() {
 
     println!("The area of the rectangle is {} square pixels.",rect1.area());
 }
+
+
