@@ -29,24 +29,35 @@
 // }
 
 
-#[derive(Debug)]
-struct Rectangle {
-    width:u32,
-    height:u32
-}
+// #[derive(Debug)]
+// struct Rectangle {
+//     width:u32,
+//     height:u32
+// }
 
-impl Rectangle {
+// impl Rectangle {
     
-    fn area(&self) -> u32 {
-        self.width * self.height
-    }
-}
+//     fn area(&self) -> u32 {
+//         self.width * self.height
+//     }
+// }
+
+
+// fn main() {
+//     let rect1 = Rectangle {width:30, height:50};
+
+//     println!("The area of the rectangle is {} square pixels.",rect1.area());
+// }
+
+
 
 
 fn main() {
-    let rect1 = Rectangle {width:30, height:50};
+    println!("122");
+    let num1 = 10;
+    let num2 = 12;
+    println!("{}, {}", num1, num2);
 
-    println!("The area of the rectangle is {} square pixels.",rect1.area());
+    
+
 }
-
-
